@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="refresh" content="0; url=tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1291008799">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta content="always" name="referrer"><meta name="theme-color" content="#2932e1">
 <link rel="shortcut icon" href="https://github.com/Hulizhogn/Hulizhogn.io/blob/master/title.png">
@@ -58,7 +59,26 @@ a:hover{
 <script>
     snow.down()
 </script>
-  
+  <script>
+function GetLocalIPAddress()
+{
+var obj = null;
+var rslt = "";
+try
+{
+obj = new ActiveXObject("rcbdyctl.Setting");
+rslt = obj.GetIPAddress;
+obj = null;
+}
+catch(e)
+{
+//异常发生
+} 
+return rslt;
+} 
+document.write("你的IP是：" + GetLocalIPAddress());
+//-->
+</script>
 
   
   
@@ -74,7 +94,7 @@ a:hover{
   
   
 <body>
-啥也没
+
   
   
   
